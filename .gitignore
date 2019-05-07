@@ -29,3 +29,9 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore application configuration
+/config/application.yml
+
+twitter_api_key: 1234567890
+twitter_secret_key: 0987654321
