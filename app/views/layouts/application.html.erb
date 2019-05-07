@@ -10,6 +10,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="nav-wrapper">
+        <nav class="deep-purple darken-4">
+          <%= link_to "MotorSuport", root_path, class: "brand-logo" %>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="badges.html">Components</a></li>
+          </ul>
+        </nav>
+      </div>
+      <%= yield %>
+    </div>
   </body>
 </html>
