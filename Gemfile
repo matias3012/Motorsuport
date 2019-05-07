@@ -29,9 +29,9 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'materialize-sass', '~> 1.0.0'
 
-gem "figaro"
+gem 'figaro'
 
-
+gem 'omniauth-twitter'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
