@@ -31,6 +31,8 @@ gem 'materialize-sass', '~> 1.0.0'
 
 gem "figaro"
 
+gem 'omniauth-twitter', '~> 1.4'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
