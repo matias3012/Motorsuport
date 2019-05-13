@@ -1,5 +1,10 @@
 <div class="row">
     <div class="col s12 m12">
+      <% if rider_signed_in? %>
+      <h4>Bienvenido <%= current_rider.email %></h4>
+      <% else %>
+      <h4>Please Register</h4>
+      <% end %>
       <div class="card">
         <div class="card-encabezado-ms">
           <span class="card-title black-text">BLOG</span>

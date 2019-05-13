@@ -15,10 +15,20 @@
         <nav class="deep-purple darken-4">
           <%= link_to "MotorSuport", root_path, class: "brand-logo" %>
           <ul class="right hide-on-med-and-down">
-            <li><a href="/auth/twitter">Sign In</a></li>
+            <% if rider_signed_in? %>
+              <li class="nav-item">
+                <%= link_to 'Sign Out', destroy_rider_session_path, method: :delete %>
+              </li>
+            <% else %>
+              <li class="nav-item">
+                <%= link_to 'Sign In', new_rider_session_path %>
+              </li>
+            <% end %>
           </ul>
         </nav>
       </div>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <%= yield %>
     </div>
   </body>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :riders
   root to: 'blogs#index'
   resources :comments
   resources :blogs
