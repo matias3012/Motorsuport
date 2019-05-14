@@ -12,16 +12,16 @@
   <body>
     <div class="container">
       <div class="nav-wrapper">
-        <nav class="blue-grey darken-3">
-          <%= link_to "MotorSuport", root_path, class: "brand-logo" %>
+        <nav class="teal darken-4">
+          <%= link_to "MotorSuport", root_path, class: "yellow-text brand-logo" %>
           <ul class="right hide-on-med-and-down">
             <% if rider_signed_in? %>
               <li class="nav-item">
-                <%= link_to 'Sign Out', destroy_rider_session_path, method: :delete %>
+                <%= link_to 'Sign Out', destroy_rider_session_path, method: :delete, class: "yellow-text" %>
               </li>
             <% else %>
               <li class="nav-item">
-                <%= link_to 'Sign In', new_rider_session_path %>
+                <%= link_to 'Sign In', new_rider_session_path, class: "yellow-text" %>
               </li>
             <% end %>
           </ul>

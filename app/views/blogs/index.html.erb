@@ -7,9 +7,9 @@
       <% end %>
       <div class="card">
         <div class="card-encabezado-ms">
-          <span class="card-title black-text">BLOG</span>
+          <span class="card-title yellow-text">BLOG</span>
         </div>
-        <div class="card-content">
+        <div class="card-content card-fondo">
           <table class="striped">
             <thead>
               <tr>
@@ -34,8 +34,12 @@
             </tbody>
           </table>
         </div>
-        <div class="card-action">
-          <%= link_to 'New Blog', new_blog_path, class: "black-text waves-effect grey btn" %>
+        <div class="card-action card-encabezado-ms">
+          <% if rider_signed_in? %>
+            <%= link_to 'New Blog', new_blog_path, class: "black-text waves-effect grey btn" %>
+          <% else %>
+            <h4>Please Register</h4>
+          <% end %>
         </div>
       </div>
     </div>
