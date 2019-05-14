@@ -1,19 +1,28 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
-
-<p>
-  <strong>Story:</strong>
-  <%= @blog.story %>
-</p>
-
-<p>
-  <strong>Author:</strong>
-  <%= @blog.author %>
-</p>
-
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+<div class="row">
+  <div class="col s12">
+    <div class="card">
+      <div class="card-encabezado-ms">
+        <span class="card-title black-text">BLOG</span>
+        <%= link_to 'Edit', edit_blog_path(@blog), class: "waves-effect grey btn right" %>
+      </div>
+      <div class="card-content">
+        <div class="row">
+          <div class="col s12 ">
+            <div class="input-field col s12">
+              <input disabled value="<%= @blog.title %>" type="text" class="validate">
+              <label>Title</label>
+            </div>
+            <div class="input-field materialize-textarea col s12">
+              <input disabled value="<%= @blog.story %>" type="text" class="materialize-textarea">
+              <label>Story</label>
+            </div>
+            <div class="input-field col s12">
+              <input disabled value="<%= @blog.author %>" type="text" class="validate">
+              <label>Author</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

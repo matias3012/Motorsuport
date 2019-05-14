@@ -1,9 +1,13 @@
 @import "materialize";
 
 $first-color: #546e7a !default;
+$card-color: #e1bee7 !default;
 
 
 .card-encabezado-ms {
   padding: 5px 24px;
   background-color: $first-color !important;
   }
+.card-fondo {
+  background-color: $card-color !important;
+}
