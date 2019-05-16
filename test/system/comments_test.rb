@@ -15,7 +15,7 @@ class CommentsTest < ApplicationSystemTestCase
     click_on "New Comment"
 
     fill_in "Author", with: @comment.author
-    fill_in "Motorsuport", with: @comment.motorsuport_id
+    fill_in "Moto Blog", with: @comment.moto_blog_id
     fill_in "Text", with: @comment.text
     click_on "Create Comment"
 
@@ -28,7 +28,7 @@ class CommentsTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Author", with: @comment.author
-    fill_in "Motorsuport", with: @comment.motorsuport_id
+    fill_in "Moto Blog", with: @comment.moto_blog_id
     fill_in "Text", with: @comment.text
     click_on "Update Comment"
 

@@ -1,10 +1,10 @@
-<%= form_with(model: blog, local: true) do |form| %>
-  <% if blog.errors.any? %>
+<%= form_with(model: moto_blog, local: true) do |form| %>
+  <% if moto_blog.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
+      <h2><%= pluralize(moto_blog.errors.count, "error") %> prohibited this moto blog from being saved:</h2>
 
       <ul>
-      <% blog.errors.full_messages.each do |message| %>
+      <% moto_blog.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -12,7 +12,7 @@
   <% end %>
   <div class="card">
     <div class="card-encabezado-ms">
-      <span class="card-title yellow-text">BLOG</span>
+      <span class="card-title yellow-text">MOTO BLOG</span>
       <%= form.submit "Save Opinion", class: "yellow-text waves-effect grey btn right" %>
     </div>
     <div class="card-content card-fondo">

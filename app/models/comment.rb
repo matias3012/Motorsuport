@@ -1,3 +1,3 @@
 class Comment < ApplicationRecord
-  belongs_to :motorsuport
+  belongs_to :moto_blog
 end

@@ -21,14 +21,14 @@
             </thead>
 
             <tbody>
-              <% @blogs.each do |blog| %>
+              <% @moto_blogs.each do |moto_blog| %>
                 <tr>
-                  <td><%= blog.title %></td>
-                  <td><%= blog.story %></td>
-                  <td><%= blog.author %></td>
-                  <td><%= link_to 'Show', blog %></td>
-                  <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-                  <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                  <td><%= moto_blog.title %></td>
+                  <td><%= moto_blog.story %></td>
+                  <td><%= moto_blog.author %></td>
+                  <td><%= link_to 'Show', moto_blog %></td>
+                  <td><%= link_to 'Edit', edit_moto_blog_path(moto_blog) %></td>
+                  <td><%= link_to 'Destroy', moto_blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
                 </tr>
               <% end %>
             </tbody>
@@ -36,7 +36,7 @@
         </div>
         <div class="card-action card-encabezado-ms">
           <% if rider_signed_in? %>
-            <%= link_to 'New Blog', new_blog_path, class: "black-text waves-effect grey btn" %>
+            <%= link_to 'New Moto Blog', new_moto_blog_path, class: "black-text waves-effect grey btn" %>
           <% else %>
             <h4>Please Register</h4>
           <% end %>

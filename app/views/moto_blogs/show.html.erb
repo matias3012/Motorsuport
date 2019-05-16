@@ -3,21 +3,21 @@
     <div class="card">
       <div class="card-encabezado-ms">
         <span class="card-title yellow-text">BLOG</span>
-        <%= link_to 'Edit', edit_blog_path(@blog), class: "yellow-text waves-effect grey btn right" %>
+        <%= link_to 'Edit', edit_moto_blog_path(@moto_blog), class: "yellow-text waves-effect grey btn right" %>
       </div>
       <div class="card-content card-fondo">
         <div class="row">
           <div class="col s12">
             <div class="input-field col s12">
-              <input disabled value="<%= @blog.title %>" type="text" class="validate black-text">
+              <input disabled value="<%= @moto_blog.title %>" type="text" class="validate black-text">
               <label>Title</label>
             </div>
             <div class="input-field materialize-textarea col s12">
-              <input disabled value="<%= @blog.story %>" type="text" class="validate black-text">
+              <input disabled value="<%= @moto_blog.story %>" type="text" class="validate black-text">
               <label>Story</label>
             </div>
             <div class="input-field col s12">
-              <input disabled value="<%= @blog.author %>" type="text" class="validate black-text">
+              <input disabled value="<%= @moto_blog.author %>" type="text" class="validate black-text">
               <label>Author</label>
             </div>
           </div>

@@ -1,6 +1,6 @@
-class CreateBlogs < ActiveRecord::Migration[5.2]
+class CreateMotoBlogs < ActiveRecord::Migration[5.2]
   def change
-    create_table :blogs do |t|
+    create_table :moto_blogs do |t|
       t.string :title
       t.string :story
       t.string :author

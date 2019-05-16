@@ -3,9 +3,9 @@
 one:
   text: MyString
   author: MyString
-  motorsuport: one
+  moto_blog: one
 
 two:
   text: MyString
   author: MyString
-  motorsuport: two
+  moto_blog: two

@@ -1,48 +1,48 @@
 require 'test_helper'
 
-class BlogsControllerTest < ActionDispatch::IntegrationTest
+class MotoBlogsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @blog = blogs(:one)
+    @moto_blog = moto_blogs(:one)
   end
 
   test "should get index" do
-    get blogs_url
+    get moto_blogs_url
     assert_response :success
   end
 
   test "should get new" do
-    get new_blog_url
+    get new_moto_blog_url
     assert_response :success
   end
 
-  test "should create blog" do
-    assert_difference('Blog.count') do
-      post blogs_url, params: { blog: { author: @blog.author, story: @blog.story, title: @blog.title } }
+  test "should create moto_blog" do
+    assert_difference('MotoBlog.count') do
+      post moto_blogs_url, params: { moto_blog: { author: @moto_blog.author, story: @moto_blog.story, title: @moto_blog.title } }
     end
 
-    assert_redirected_to blog_url(Blog.last)
+    assert_redirected_to moto_blog_url(MotoBlog.last)
   end
 
-  test "should show blog" do
-    get blog_url(@blog)
+  test "should show moto_blog" do
+    get moto_blog_url(@moto_blog)
     assert_response :success
   end
 
   test "should get edit" do
-    get edit_blog_url(@blog)
+    get edit_moto_blog_url(@moto_blog)
     assert_response :success
   end
 
-  test "should update blog" do
-    patch blog_url(@blog), params: { blog: { author: @blog.author, story: @blog.story, title: @blog.title } }
-    assert_redirected_to blog_url(@blog)
+  test "should update moto_blog" do
+    patch moto_blog_url(@moto_blog), params: { moto_blog: { author: @moto_blog.author, story: @moto_blog.story, title: @moto_blog.title } }
+    assert_redirected_to moto_blog_url(@moto_blog)
   end
 
-  test "should destroy blog" do
-    assert_difference('Blog.count', -1) do
-      delete blog_url(@blog)
+  test "should destroy moto_blog" do
+    assert_difference('MotoBlog.count', -1) do
+      delete moto_blog_url(@moto_blog)
     end
 
-    assert_redirected_to blogs_url
+    assert_redirected_to moto_blogs_url
   end
 end

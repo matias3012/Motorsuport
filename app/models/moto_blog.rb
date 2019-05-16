@@ -1,0 +1,2 @@
+class MotoBlog < ApplicationRecord
+end

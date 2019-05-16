@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class BlogTest < ActiveSupport::TestCase
+class MotoBlogTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
